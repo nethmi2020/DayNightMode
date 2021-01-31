@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f2f2
+}
+.mainbox{
+    background-color: white ;
+    min-width: 200px;
+    width:50%;
+    height: 35%;
+    min-height: 200px;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-color: white;
+    box-shadow: 2px 2px 4px 2px #888888;
+    border-radius:20px;
+    display: flex;
+    position: relative;
+}
+
+
+.mainbox .toggle{
+    position: absolute;
+    width: 40px;
+    right: 15px;
+    top: 13px;
+    border-radius: 20px;
+    height: 20px;
+    background-color: #063B5D;
+    display: flex;
+    align-items: center;
+}
+
+ .toggle .circle{
+    height: 16px;
+    width: 16px;
+    background: white;
+    border-radius: 50%;
+    margin-left: 3px;
+    transition: all 0.3 ease;
+}
+#switch:checked ~ .mainbox .circle{
+margin-left: 22px;;
+}
+
+
+.mainbox .img{
+    padding: 30px;
+    
+}
+
+.mainbox .img img{
+    width: 200px;
+    height: 250px;
+    border: 3px solid #063B5D;
+    border-radius: 10px;
+    object-fit: cover;
+    padding: 2px;
+
+}
+.mainbox .text{
+    padding: 0px 5px 15px 5px;
+    color: #063B5D;;
+}
+.mainbox .text p{
+    line-height: 1.5;
+}
+.mainbox .text button{
+    padding:5px 10px;
+    border-radius: 5px;
+    background-color: #063B5D;
+    color: white;
+    font-size: 20px;
+    cursor:pointer;
+    border:1px solid #063B5D; 
+    box-shadow: 2px 2px 2px #063B5D;;
+}
+.mainbox .text .social{
+    text-align: right;
+}
+.mainbox .text .social i{
+    padding: 5px;;
+    color:#063B5D;
+}
+.mainbox .text .social i:hover{
+    color:darkblue;
+    font-size: 20px;;
+}
+
+#switch:checked ~ .mainbox  
+{
+    background-color: #063B5D ;
+    
+}
+#switch:checked ~ .mainbox .toggle{
+    background-color: white;
+
+}
+
+#switch:checked ~ .mainbox .toggle .circle{
+    background-color:#063B5D ;
+}
+#switch:checked ~ .mainbox .img
+{
+    
+    padding: 30px;
+}
+
+#switch:checked ~ .mainbox .img img{
+
+    width: 200px;
+    height: 250px;
+    border: 3px solid white;
+    border-radius: 10px;
+    object-fit: cover;
+    padding: 2px;
+}
+
+
+
+#switch:checked ~ .mainbox  .text{
+    color: white;
+}
+#switch:checked ~ .mainbox button{
+    background-color: white;
+    color:#063B5D ;
+
+}
+
+#switch:checked ~ .mainbox .social i{
+    color: white;
+}
+
+#switch:checked ~ .mainbox .social i:hover{
+    color:white;
+    font-size: 20px;;
+}
